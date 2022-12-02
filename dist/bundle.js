@@ -1,0 +1,1 @@
+(()=>{alert("dag Paulie"),document.body.appendChild(function(){const e=document.createElement("div");return e.innerHTML="this is the innerhtml",e}());const e=document.createElement("p");e.innerHTML="tweede bericht",document.querySelector("#content").appendChild(e)})();
