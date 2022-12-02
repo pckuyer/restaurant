@@ -14,7 +14,7 @@
   \**********************/
 /***/ (() => {
 
-eval("alert(\"dag Paulie\")\n\nconsole.log(\"log dag!\")\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("alert(\"dag Paulie\")\n\nfunction component() {\n  const element = document.createElement('div');\n\n  // Lodash, currently included via a script, is required for this line to work\n  element.innerHTML = \"this is the innerhtml\";\n\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ })
 

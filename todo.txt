@@ -1,5 +1,4 @@
-Quick tip: if you run npx webpack --watch you will not have to rerun webpack every time you make a change.
-OR: better still, run npm start
+Quick tip: run npm start
 
 xxx
 

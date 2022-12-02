@@ -1,1 +1,1 @@
-alert("dag Paulie"),console.log("log dag!");
+alert("dag Paulie"),document.body.appendChild(function(){const e=document.createElement("div");return e.innerHTML="this is the innerhtml",e}());
