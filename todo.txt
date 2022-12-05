@@ -1,11 +1,9 @@
-Quick tip: run npm start (not sure if this is working completely)
+Quick tip: run npm start 
 
 xxx
 
-set up watch. 
-
-Now remove all elements from the HTML (so leave only the <html>, <body>, and <div id="content"> tags) and instead create them by using JavaScript only, e.g. by appending each new element to div#content once the page is first loaded. Since we’re all set up to write our code in multiple files, let’s write this initial page-load function inside of its own module and then import and call it inside of index.js.
-
+add img to general-info.js (see guide on asset management.)
+	
 Next, set up your restaurant site to use tabbed browsing to access the Contact and Menu pages. Look at the behavior of this student solution for visual inspiration.
 
 Put the contents of each ‘tab’ inside of its own module. Each module will export a function that creates a div element, adds the appropriate content and styles to that element and then appends it to the DOM.

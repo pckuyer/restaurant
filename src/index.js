@@ -1,16 +1,13 @@
-import printMe from './menu.js'
+import restaurantInfo from './general-info.js';
+import menu from './menu.js';
 
 function component() {
   const element = document.createElement('div');
+  element.classList.add("wrapper");
 
-  const btn = document.createElement('button');
-
-  element.innerHTML = "Hello Everyone! This is the innerhtml";
-
-  btn.innerHTML = 'click me and check the console';
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
+  const info = restaurantInfo();
+  element.appendChild(info);
+  element.appendChild(menu())
 
   return element;
 }
