@@ -2,7 +2,7 @@ import './style.css'
 
 import restaurantInfo from './general-info.js';
 import menu from './menu.js';
-// import location from ''
+import location from './location.js'
 import chefs from './chefs.js'
 
 // import picture from './restaurant.jpg';
@@ -51,7 +51,8 @@ function component() {
   }
 
   btn2.onclick = function() {
-    switchingWrapper.innerHTML = "dag";
+    switchingWrapper.innerHTML = "";
+    switchingWrapper.appendChild(location());
   }
 
   btn3.onclick = function() {
