@@ -1,3 +1,5 @@
+import './style.css';
+
 export default function menu() {
   const element = document.createElement('div');
   element.classList.add("menu");

@@ -1,3 +1,6 @@
+import './style.css';
+
+
 export default function location() {
 	const element = document.createElement('div');
 	element.classList.add("location");

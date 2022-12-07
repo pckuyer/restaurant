@@ -1,5 +1,25 @@
+design mobile + desktop page
+
+- Rgb soup is 230, 130, 50 
+- black background
+- half a bowl for desktop, whole bowl for mobile
+- heavy modern font
+- 4 tabs: in desktop under each letter, in mobile on bottom. 
+
+do css (think about yt video on grid)
+
+change directory structure? see webpack guides asset management / global assets. 
+
+try lazy loading with webpack
+
+try minimizing and uglifying with webpack
+
+look into how to go from mode development to mode production in webpack
 
 If you are using GitHub pages to host your completed page you need to do a tiny bit more work to get it to show up. After running webpack the full bundled version of your site is available in the dist folder, but GH pages is looking for an index.html in the root directory of your project.
 
 Simply follow the instructions on this gist. EZPZ!
 Recall that the source branch for GitHub Pages is set in your repository’s settings.
+
+{I could also look into another hosting service, one that can also host py files}
+This is sth I need to do. 

@@ -6,8 +6,14 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    menu: './src/menu.js'
+    menu: './src/menu/menu.js'
   },
+  // resolve: {
+  //   extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  //   // alias: {
+  //   //   menu: path.resolve(__dirname, 'src/menu/')
+  //   // },
+  // },
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',

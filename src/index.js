@@ -1,11 +1,11 @@
 import './style.css'
 
-import restaurantInfo from './general-info.js';
-import menu from './menu.js';
-import location from './location.js'
-import chefs from './chefs.js'
+import restaurantInfo from './info/general-info.js';
 
-// import picture from './restaurant.jpg';
+import menu from './menu/menu.js';
+import location from './location/location.js'
+import chefs from './chefs/chefs.js'
+
 
 function component() {
   const element = document.createElement('div');
@@ -16,13 +16,8 @@ function component() {
 
   const info = restaurantInfo();
   
-  // const myPicture = new Image();
-  // myPicture.src = picture;
-
-  element.appendChild(info);
 
 
-  // element.appendChild(myPicture);
 
   // writing tabs 
   const tabsWrapper = document.createElement('div');
@@ -59,6 +54,9 @@ function component() {
     switchingWrapper.innerHTML = "";
     switchingWrapper.appendChild(chefs());
   }
+
+  
+  element.appendChild(info);
 
   return element;
 }
