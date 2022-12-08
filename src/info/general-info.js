@@ -5,16 +5,12 @@ export default function restaurantInfo() {
 	element.classList.add("generalInfo")
 
 	const heading = document.createElement('h1');
-	heading.innerHTML = "Im an h1 heading. Here is the general info";
-
-	const infoPara = document.createElement('p');
-	infoPara.innerHTML = "I am a paragraph about the restaurant.";
+	heading.innerHTML = "SOUP";
 
 	const myPicture = new Image();
 	myPicture.src = picture;
 
 	element.appendChild(heading);
-	element.appendChild(infoPara);
 	element.appendChild(myPicture);
 
 	return element; 

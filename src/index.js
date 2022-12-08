@@ -36,6 +36,7 @@ function component() {
   tabsWrapper.appendChild(btn3);
 
 
+  element.appendChild(info);
   element.appendChild(tabsWrapper);
   element.appendChild(switchingWrapper); 
 
@@ -56,7 +57,6 @@ function component() {
   }
 
   
-  element.appendChild(info);
 
   return element;
 }
