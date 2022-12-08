@@ -1,4 +1,4 @@
-import './style.css'
+import './info/style.css'
 
 import restaurantInfo from './info/general-info.js';
 
