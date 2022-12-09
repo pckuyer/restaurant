@@ -11,6 +11,9 @@ function component() {
   const element = document.createElement('div');
   element.classList.add("wrapper");
 
+  const heading = document.createElement('h1');
+  heading.innerHTML = "SOUP";
+
   const switchingWrapper = document.createElement('div');
   switchingWrapper.classList.add("switchingWrapper");
 
@@ -22,6 +25,10 @@ function component() {
   // writing tabs 
   const tabsWrapper = document.createElement('div');
   tabsWrapper.classList.add("tabsWrapper");
+
+  const btn0 = document.createElement('button');
+  btn0.innerHTML = "home";
+  tabsWrapper.appendChild(btn0);
 
   const btn1 = document.createElement('button');
   btn1.innerHTML = "menu";
@@ -35,10 +42,16 @@ function component() {
   btn3.innerHTML = "chefs";
   tabsWrapper.appendChild(btn3);
 
+  switchingWrapper.appendChild(info);
 
-  element.appendChild(info);
+  element.appendChild(heading);
   element.appendChild(tabsWrapper);
   element.appendChild(switchingWrapper); 
+
+  btn0.onclick = function() {
+    switchingWrapper.innerHTML = "";
+    switchingWrapper.appendChild(info);
+  }
 
   btn1.onclick = function() {
     switchingWrapper.innerHTML = "";
@@ -55,8 +68,6 @@ function component() {
     switchingWrapper.innerHTML = "";
     switchingWrapper.appendChild(chefs());
   }
-
-  
 
   return element;
 }
