@@ -1,4 +1,9 @@
+import './../node_modules/reset-css/reset.css'
 import './info/style.css'
+import './chefs/style.css';
+import './location/style.css';
+import './menu/style.css';
+
 
 import restaurantInfo from './info/general-info.js';
 
@@ -50,13 +55,12 @@ function component() {
 
   btn0.onclick = function() {
     switchingWrapper.innerHTML = "";
-    switchingWrapper.appendChild(info);
+    switchingWrapper.appendChild(restaurantInfo());
   }
 
   btn1.onclick = function() {
     switchingWrapper.innerHTML = "";
-    switchingWrapper.appendChild(menu()); //this allows for multiple menu additions
-
+    switchingWrapper.appendChild(menu()); 
   }
 
   btn2.onclick = function() {

@@ -1,6 +1,3 @@
-import './style.css';
-
-
 export default function chefs () {
 	const chefs = document.createElement('div');
 	chefs.classList.add("chefs");
