@@ -53,24 +53,44 @@ function component() {
   element.appendChild(tabsWrapper);
   element.appendChild(switchingWrapper); 
 
+
+  function resetBtnColors () {
+    const btns = [btn0, btn1, btn2, btn3];
+    btns.forEach((btn) => {
+      btn.style.backgroundColor = "rgba(69, 84, 0, 1)";
+    });
+  };
+
   btn0.onclick = function() {
     switchingWrapper.innerHTML = "";
     switchingWrapper.appendChild(restaurantInfo());
+    switchingWrapper.setAttribute('id','');
+    resetBtnColors();
+    btn0.style.backgroundColor = "rgba(238, 100, 1, 1)";
   }
 
   btn1.onclick = function() {
     switchingWrapper.innerHTML = "";
     switchingWrapper.appendChild(menu()); 
+    switchingWrapper.setAttribute('id','switchingWrapperSpecial');
+    resetBtnColors();
+    btn1.style.backgroundColor = "rgba(238, 100, 1, 1)";
   }
 
   btn2.onclick = function() {
     switchingWrapper.innerHTML = "";
     switchingWrapper.appendChild(location());
+    switchingWrapper.setAttribute('id','switchingWrapperSpecial');
+    resetBtnColors();
+    btn2.style.backgroundColor = "rgba(238, 100, 1, 1)";
   }
 
   btn3.onclick = function() {
     switchingWrapper.innerHTML = "";
     switchingWrapper.appendChild(chefs());
+    switchingWrapper.setAttribute('id','switchingWrapperSpecial');
+    resetBtnColors();
+    btn3.style.backgroundColor = "rgba(238, 100, 1, 1)";
   }
 
   return element;

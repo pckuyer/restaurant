@@ -6,19 +6,28 @@
 	font-style: normal;
 }
 
+/* color pallete */
+
+/*$black: rgba(0, 0, 0, 1);
+$cultured: rgba(244, 242, 244, 1);
+$army-green: rgba(69, 84, 0, 1);
+$spanish-orange: rgba(238, 100, 1, 1);
+$orange: rgba(250, 127, 3, 1);*/
+
+
 body {
 	background-image: url("./woodenTable2.jpg");
     min-height: 100vh;
     min-width: 100vw;
     overflow: hidden;
     background-size: cover;
-    background-position: top right;
+/*    background-position: top;*/
     padding-top: 40px;
 }
 
 h1 {
 	font-family: 'Rono';
-	color: rgb(250, 140, 50);
+	color: rgba(238, 100, 1, 1);
 	font-size: 280px;
 	-webkit-text-stroke: 2px white;
 	margin: 0px;
@@ -36,16 +45,48 @@ h1 {
 	display: flex;
 	justify-content: space-around;
 	position: absolute;
-	top: 240px;
+	top: 236px;
 }
 
 .tabsWrapper button {
-	width: 65px;
+	width: 75px;
 	cursor: pointer;
+	background-color: rgba(69, 84, 0, 1);
+	color: white;
+	border: solid white 1.5px;
+	border-radius: 10px;
+	padding: 5px;
 }
 
-.switchingWrapper {
-	width: 800px;
-	min-height: 850px;
-	overflow: hidden;
+.tabsWrapper button:first-child {
+	background-color: rgba(238, 100, 1, 1);
 }
+
+.tabsWrapper button:hover {
+	transform: scale(1.1);
+}
+
+/*switching wrapper in soup state*/
+.switchingWrapper {
+	width: 65%;
+	height: 500px;
+	overflow-y: hidden;
+	padding: 25px;
+	font-size: 18px;
+	color: black;
+}
+
+.switchingWrapper img {
+	width: 100%;
+}
+
+/*switching wrapper in state other than bowl of soup*/
+
+#switchingWrapperSpecial {
+	background-color: rgba(255, 255, 255, 0.5);	
+	overflow: scroll;
+	height: 400px; 
+}
+
+
+
