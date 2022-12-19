@@ -2,5 +2,6 @@
 node_modules
 
 #Ignore keys
+.eslintrc.js
 gh cli key
 gh cli key.pub

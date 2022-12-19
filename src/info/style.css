@@ -1,32 +1,31 @@
-
 @font-face {
-	font-family: 'Rono';
-	src: url('./Rono-Black.ttf') format('truetype');
-	font-weight: 600;
+	font-family: "Rono";
+	src: url("./Rono-Black.ttf") format("truetype");
+	font-weight: 500;
 	font-style: normal;
 }
 
-/* color pallete */
-
-/*$black: rgba(0, 0, 0, 1);
-$cultured: rgba(244, 242, 244, 1);
-$army-green: rgba(69, 84, 0, 1);
-$spanish-orange: rgba(238, 100, 1, 1);
-$orange: rgba(250, 127, 3, 1);*/
-
+/*colors*/
+:root {
+	/*	--black: rgba(0, 0, 0, 1);*/
+	--cultured: rgba(244, 242, 244, 1);
+	--army-green: rgba(69, 84, 0, 1);
+	--spanish-orange: rgba(238, 100, 1, 1);
+	--orange: rgba(250, 127, 3, 1);
+}
 
 body {
 	background-image: url("./woodenTable2.jpg");
-    min-height: 100vh;
-    min-width: 100vw;
-    overflow: hidden;
-    background-size: cover;
-/*    background-position: top;*/
-    padding-top: 40px;
+	min-height: 100vh;
+	min-width: 100vw;
+	overflow: hidden;
+	background-size: cover;
+	/*    background-position: top;*/
+	padding-top: 40px;
 }
 
 h1 {
-	font-family: 'Rono';
+	font-family: "Rono";
 	color: rgba(238, 100, 1, 1);
 	font-size: 280px;
 	-webkit-text-stroke: 2px white;
@@ -34,10 +33,51 @@ h1 {
 	display: inline-block;
 }
 
+h2 {
+	font-family: "Rono";
+	font-size: 30px;
+	-webkit-text-stroke: 1px white;
+	color: rgba(69, 84, 0, 1);
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.mottoWrapper {
+	display: grid;
+	place-items: center;
+	padding-top: 15px;
+}
+
+.mottoWrapper p {
+	/*	background-color: rgba(255, 255, 255, 0.5);*/
+	color: white;
+	background-color: rgba(114, 80, 71, 0.2);
+	/*	padding: 10px;*/
+	font-size: 32px;
+	font-family: "Satisfy";
+}
+
+.mottoWrapper button {
+	display: block;
+	cursor: pointer;
+	background-color: var(--cultured);
+	color: var(--orange);
+	border: solid var(--orange) 1px;
+	border-radius: 30px;
+	padding: 5px 15px;
+	margin: 10px;
+	font-size: 24px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	font-family: "Satisfy";
+	font-weight: bold;
+}
+
+.mottoWrapper button:hover {
+	transform: scale(1.1);
 }
 
 .tabsWrapper {
@@ -68,7 +108,7 @@ h1 {
 
 /*switching wrapper in soup state*/
 .switchingWrapper {
-	width: 65%;
+	width: 50%;
 	height: 500px;
 	overflow-y: hidden;
 	padding: 25px;
@@ -83,10 +123,7 @@ h1 {
 /*switching wrapper in state other than bowl of soup*/
 
 #switchingWrapperSpecial {
-	background-color: rgba(255, 255, 255, 0.5);	
+	background-color: rgba(255, 255, 255, 0.5);
 	overflow: scroll;
-	height: 400px; 
+	height: 400px;
 }
-
-
-
