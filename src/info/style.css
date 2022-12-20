@@ -53,7 +53,6 @@ h2 {
 }
 
 .mottoWrapper p {
-	/*	background-color: rgba(255, 255, 255, 0.5);*/
 	color: white;
 	background-color: rgba(114, 80, 71, 0.2);
 	/*	padding: 10px;*/
@@ -109,7 +108,7 @@ h2 {
 /*switching wrapper in soup state*/
 .switchingWrapper {
 	width: 50%;
-	height: 500px;
+	height: 480px; /* this influences background position*/
 	overflow-y: hidden;
 	padding: 25px;
 	font-size: 18px;

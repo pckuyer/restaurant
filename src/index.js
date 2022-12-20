@@ -1,6 +1,6 @@
 import "./../node_modules/reset-css/reset.css";
 import "./info/style.css";
-import "./chefs/style.css";
+import "./bookings/style.css";
 import "./location/style.css";
 import "./menu/style.css";
 
@@ -8,7 +8,7 @@ import restaurantInfo from "./info/general-info.js";
 
 import menu from "./menu/menu.js";
 import location from "./location/location.js";
-import chefs from "./chefs/chefs.js";
+import bookings from "./bookings/bookings.js";
 
 function component() {
   const element = document.createElement("div");
@@ -94,7 +94,7 @@ function component() {
 
   btn3.onclick = function () {
     switchingWrapper.innerHTML = "";
-    switchingWrapper.appendChild(chefs());
+    switchingWrapper.appendChild(bookings());
     switchingWrapper.setAttribute("id", "switchingWrapperSpecial");
     resetBtnColors();
     btn3.style.backgroundColor = "rgba(238, 100, 1, 1)";

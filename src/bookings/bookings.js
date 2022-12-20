@@ -1,6 +1,6 @@
-export default function chefs() {
-	const chefs = document.createElement("div");
-	chefs.classList.add("chefs");
+export default function bookings() {
+	const bookings = document.createElement("div");
+	bookings.classList.add("bookings");
 
 	const heading = document.createElement("h2");
 	heading.innerHTML = "Make a booking";
@@ -67,8 +67,8 @@ export default function chefs() {
 	inputBtn.setAttribute("value", "book");
 	form.appendChild(inputBtn);
 
-	chefs.appendChild(heading);
-	chefs.appendChild(form);
+	bookings.appendChild(heading);
+	bookings.appendChild(form);
 
-	return chefs;
+	return bookings;
 }
