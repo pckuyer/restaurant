@@ -1,2 +1,39 @@
 .bookings {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 22px;
+	font-family: arial;
+}
+
+.bookings form {
+	width: 90%;
+}
+
+.bookings input {
+	margin: 5px;
+	width: 100%;
+	font-size: 20px;
+	font-family: arial;
+	padding: 2px;
+}
+
+.bookings #date,
+.bookings #time {
+	width: calc(100% - 75px);
+}
+
+.bookings #time {
+	margin-left: 3.5px;
+}
+
+.bookings input[type="submit"] {
+	height: 35px;
+	width: 100px;
+	padding: 5px;
+	border-radius: 25%;
+	display: block;
+	color: white;
+	background-color: var(--army-green);
+	border: solid white 2px;
 }

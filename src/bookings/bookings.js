@@ -7,6 +7,12 @@ export default function bookings() {
 
 	const form = document.createElement("form");
 
+	const br = document.createElement("br");
+	function breakLine() {
+		const clone = br.cloneNode(true);
+		return form.appendChild(clone);
+	}
+
 	const inputName = document.createElement("input");
 	inputName.setAttribute("type", "text");
 	inputName.setAttribute("minlength", 2);
@@ -14,6 +20,7 @@ export default function bookings() {
 	inputName.setAttribute("placeholder", "name");
 	inputName.required = true;
 	form.appendChild(inputName);
+	breakLine();
 
 	const inputEmail = document.createElement("input");
 	inputEmail.setAttribute("type", "email");
@@ -21,6 +28,7 @@ export default function bookings() {
 	inputEmail.setAttribute("placeholder", "email address");
 	inputEmail.required = true;
 	form.appendChild(inputEmail);
+	breakLine();
 
 	const inputPartySize = document.createElement("input");
 	inputPartySize.setAttribute("type", "number");
@@ -30,6 +38,7 @@ export default function bookings() {
 	inputPartySize.setAttribute("max", 60);
 	inputPartySize.required = true;
 	form.appendChild(inputPartySize);
+	breakLine();
 
 	const todayDate = new Date().toISOString().split("T")[0];
 	const currentYear = parseInt(todayDate.slice(0, 4));
@@ -39,7 +48,7 @@ export default function bookings() {
 	const inputDate = document.createElement("input");
 	const labelInputDate = document.createElement("label");
 	labelInputDate.setAttribute("for", "date");
-	labelInputDate.innerHTML = "date";
+	labelInputDate.innerHTML = "date: ";
 	inputDate.setAttribute("type", "date");
 	inputDate.setAttribute("id", "date");
 	inputDate.setAttribute("min", todayDate);
@@ -48,11 +57,12 @@ export default function bookings() {
 	inputDate.required = true;
 	form.appendChild(labelInputDate);
 	form.appendChild(inputDate);
+	breakLine();
 
 	const inputTime = document.createElement("input");
 	const labelInputTime = document.createElement("label");
 	labelInputTime.setAttribute("for", "time");
-	labelInputTime.innerHTML = "time";
+	labelInputTime.innerHTML = "time: ";
 	inputTime.setAttribute("type", "time");
 	inputTime.setAttribute("id", "time");
 	inputTime.setAttribute("min", "13:00");
@@ -61,6 +71,7 @@ export default function bookings() {
 	inputTime.required = true;
 	form.appendChild(labelInputTime);
 	form.appendChild(inputTime);
+	breakLine();
 
 	const inputBtn = document.createElement("input");
 	inputBtn.setAttribute("type", "submit");

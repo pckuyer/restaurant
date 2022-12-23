@@ -16,28 +16,30 @@
 
 body {
 	background-image: url("./woodenTable2.jpg");
-	min-height: 100vh;
+	height: 100vh;
 	min-width: 100vw;
 	overflow: hidden;
 	background-size: cover;
 	/*    background-position: top;*/
-	padding-top: 40px;
+	/*	padding-top: 40px;*/
 }
 
 h1 {
-	font-family: "Rono";
+	font-family: "Rono", "arial";
 	color: rgba(238, 100, 1, 1);
-	font-size: 280px;
+	font-size: 90px; /* still to big probably*/
 	-webkit-text-stroke: 2px white;
 	margin: 0px;
 	display: inline-block;
+	margin-top: 20px;
 }
 
 h2 {
-	font-family: "Rono";
+	font-family: "Rono", "arial";
 	font-size: 30px;
 	-webkit-text-stroke: 1px white;
 	color: rgba(69, 84, 0, 1);
+	text-align: center;
 }
 
 .wrapper {
@@ -53,11 +55,13 @@ h2 {
 }
 
 .mottoWrapper p {
+	text-align: center;
+	font-size: 28px;
 	color: white;
 	background-color: rgba(114, 80, 71, 0.2);
 	/*	padding: 10px;*/
 	font-size: 32px;
-	font-family: "Satisfy";
+	font-family: "Satisfy", "arial";
 }
 
 .mottoWrapper button {
@@ -65,13 +69,13 @@ h2 {
 	cursor: pointer;
 	background-color: var(--cultured);
 	color: var(--orange);
-	border: solid var(--orange) 1px;
+	border: solid white 1px;
 	border-radius: 30px;
 	padding: 5px 15px;
 	margin: 10px;
 	font-size: 24px;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-	font-family: "Satisfy";
+	font-family: "Satisfy", "arial";
 	font-weight: bold;
 }
 
@@ -80,15 +84,16 @@ h2 {
 }
 
 .tabsWrapper {
-	width: 830px; /*same as h1 */
+	width: 100vw;
 	display: flex;
-	justify-content: space-around;
-	position: absolute;
-	top: 236px;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0px;
 }
 
 .tabsWrapper button {
-	width: 75px;
+	width: 85px;
+	font-size: 14px;
 	cursor: pointer;
 	background-color: rgba(69, 84, 0, 1);
 	color: white;
@@ -98,7 +103,8 @@ h2 {
 }
 
 .tabsWrapper button:first-child {
-	background-color: rgba(238, 100, 1, 1);
+	background-color: white;
+	color: var(--army-green);
 }
 
 .tabsWrapper button:hover {
@@ -107,12 +113,12 @@ h2 {
 
 /*switching wrapper in soup state*/
 .switchingWrapper {
-	width: 50%;
-	height: 480px; /* this influences background position*/
+	width: 100%;
+	height: calc(100vh - 110px); /* influences backrgound image position? */
 	overflow-y: hidden;
-	padding: 25px;
 	font-size: 18px;
 	color: black;
+	padding-bottom: 35px;
 }
 
 .switchingWrapper img {
@@ -123,6 +129,29 @@ h2 {
 
 #switchingWrapperSpecial {
 	background-color: rgba(255, 255, 255, 0.5);
-	overflow: scroll;
-	height: 400px;
+	overflow-y: scroll;
+}
+
+@media screen and (min-width: 800px) {
+	h1 {
+		font-size: 280px;
+	}
+
+	.tabsWrapper {
+		position: absolute;
+		top: 216px;
+		bottom: auto;
+		width: 836px; /*same as h1 */
+		justify-content: space-around;
+	}
+
+	.switchingWrapper {
+		width: 50%;
+		padding: 25px;
+		height: 420px; /* this influences background position*/
+	}
+
+	.mottoWrapper p {
+		font-size: 32px;
+	}
 }

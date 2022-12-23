@@ -62,6 +62,7 @@ function component() {
     const btns = [btn0, btn1, btn2, btn3];
     btns.forEach((btn) => {
       btn.style.backgroundColor = "rgba(69, 84, 0, 1)";
+      btn.style.color = "white";
     });
   }
 
@@ -70,7 +71,8 @@ function component() {
     switchingWrapper.appendChild(restaurantInfo());
     switchingWrapper.setAttribute("id", "");
     resetBtnColors();
-    btn0.style.backgroundColor = "rgba(238, 100, 1, 1)";
+    btn0.style.backgroundColor = "white";
+    btn0.style.color = "rgb(69, 84, 0)";
     mottoWrapper.style.display = "";
   };
 
@@ -79,7 +81,8 @@ function component() {
     switchingWrapper.appendChild(menu());
     switchingWrapper.setAttribute("id", "switchingWrapperSpecial");
     resetBtnColors();
-    btn1.style.backgroundColor = "rgba(238, 100, 1, 1)";
+    btn1.style.backgroundColor = "white";
+    btn1.style.color = "rgb(69, 84, 0)";
     mottoWrapper.style.display = "none";
   };
 
@@ -88,7 +91,8 @@ function component() {
     switchingWrapper.appendChild(location());
     switchingWrapper.setAttribute("id", "switchingWrapperSpecial");
     resetBtnColors();
-    btn2.style.backgroundColor = "rgba(238, 100, 1, 1)";
+    btn2.style.backgroundColor = "white";
+    btn2.style.color = "rgb(69, 84, 0)";
     mottoWrapper.style.display = "none";
   };
 
@@ -97,7 +101,8 @@ function component() {
     switchingWrapper.appendChild(bookings());
     switchingWrapper.setAttribute("id", "switchingWrapperSpecial");
     resetBtnColors();
-    btn3.style.backgroundColor = "rgba(238, 100, 1, 1)";
+    btn3.style.backgroundColor = "white";
+    btn3.style.color = "rgb(69, 84, 0)";
     mottoWrapper.style.display = "none";
   };
 
